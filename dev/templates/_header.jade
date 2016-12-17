@@ -1,4 +1,35 @@
 block header
-
-	header.site-header
-		h1 Blank template for frontend developers
+	.header-holder
+	header.site-header.cf
+		button.menu-toggle
+			.holder
+				span
+				span
+				span
+		.menu
+			.menu__inner
+				ul
+					li
+						a(href="#") Главная
+					li
+						a(href="#") Наши услуги
+					li
+						a(href="#") Каталог проектов
+					li
+						a(href="#") Портфолио
+					li
+						a(href="#") Блог
+					li
+						a(href="#") О нас
+					li
+						a(href="#") Контакты
+		.logo-side
+			a.logo(href="#")
+				img(src="img/logo.png", alt="")
+			p.slogan Загородное строительство частных домов
+		.tel-side
+			.email-block
+				a.tel(href="tel:8 (800) 456-76-67") 8 (800) 456-76-67
+				p.email E-mail:
+					a(href="mailto:info@tiilitalo.ru") info@tiilitalo.ru
+			a.callback(href="#") Связаться с нами

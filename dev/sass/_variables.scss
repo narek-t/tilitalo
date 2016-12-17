@@ -1,4 +1,44 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+    font-family: 'panton';
+    src: url('../fonts/panton-black.woff2') format('woff2'),
+         url('../fonts/panton-black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton';
+    src: url('../fonts/panton.woff2') format('woff2'),
+         url('../fonts/panton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hn';
+    src: url('../fonts/helveticaneuecyr-black_0.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-black_0.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'hn';
+    src: url('../fonts/helveticaneuecyr-bold_0.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-bold_0.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hn';
+    src: url('../fonts/helveticaneuecyr-light_0.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light_0.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.animated {
+    transition: all .3s ease-in-out;
+}
