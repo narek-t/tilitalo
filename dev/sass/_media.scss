@@ -1,0 +1,158 @@
+@media screen and (max-width: 1400px) {
+	.portfolio__wrapper-item,
+	.portfolio__wrapper-item.small {
+		width: 49.5%;
+		margin-bottom: 10px;
+	}
+	.portfolio__wrapper {
+		flex-wrap: wrap;
+	}
+	.portfolio__wrapper .block-wrap .block {
+		width: 49%;
+	}
+	.offers__item {
+		width: 32%;
+		margin-bottom: 20px;
+	}
+	.offers__inner {
+		flex-wrap: wrap;
+	}
+	.offers__item .img-side img {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.site-header {
+		height: 50px;
+	}
+	.menu {
+		top: 50px;
+	}
+	.menu-toggle {
+		width: 50px;
+		height: 50px;
+	}
+	.logo-side .logo {
+		margin-left: 60px;
+		img {
+			max-width: 90px;
+		}
+	}
+	.logo-side .slogan {
+		margin-top: 9px;
+		margin-left: 10px;
+		font-size: 12px;
+	}
+	.tel-side .callback {
+		height: 50px;
+		line-height: 50px;
+		padding: 0 20px;
+		font-size: 12px;
+		margin-left: 15px;
+	}
+	.tel-side .tel {
+		font-size: 15px;
+	}
+	.intro {
+		background-position: top 50px center;
+	}
+	.tel-side .email-block {
+		margin-top: 7px;
+	}
+	.menu ul a {
+		line-height: 50px;
+	}
+	.menu {
+		width: 250px;
+		left: -250px;
+	}
+	.menu-toggle span {
+		height: 2px;
+	}
+	.services {
+		display: block;
+	}
+	.services__item {
+		width: 100%;
+	}
+	.block-title {
+		margin: 40px 0;
+	}
+	.portfolio__wrapper {
+		display: block;
+	}
+	.portfolio__wrapper-item, .portfolio__wrapper-item.small {
+		width: 100%;
+	}
+	.portfolio__wrapper-item.small .block {
+		height: 400px;
+	}
+	.portfolio__wrapper-item.small {
+		height: auto;
+	}
+	.portfolio__wrapper-item.small.last {
+		height: 600px;
+	}
+	.offers__item {
+		width: 49%;
+	}
+	.publications__wrap {
+		display: block;
+	}
+	.publications__item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.publications__item .img-side {
+		width: 40%;
+	}
+	.about .slider-side {
+		float: none;
+		width: 100%;
+	}
+	.about .slider-side__inner {
+		width: 100%;
+	}
+	.about .slick-arrow {
+		display: none !important;
+	}
+	.about .slick-slide img {
+		margin: auto;
+	}
+	.about .slick-slide {
+		height: auto;
+	}
+	.about .txt-side {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.about, .publications,
+	.portfolio, .offers, .team {
+		padding: 0 15px;
+	}
+	.services__item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.site-footer .footer-nav {
+		margin-left: 25px;
+	}
+	.site-footer .footer-nav ul.first {
+		margin-right: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

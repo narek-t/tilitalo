@@ -17,12 +17,30 @@ $(document).ready(function() {
 	$('.slider-side__inner').slick({
 		infinite: true,
 		slidesToShow: 2,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	      }
+	    },
+	  ]
 	});
 	$('.team-slider').slick({
 		infinite: true,
 		slidesToShow: 2,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	      }
+	    },
+	  ]
 	});
 	$('.fancybox').fancybox({
 		helpers: {
