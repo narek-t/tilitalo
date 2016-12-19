@@ -1,6 +1,14 @@
-$down-hover: 35px 0px -35px 0px 16px 8px 51px 31px '../img/sprite.png';
-$down: 35px 12px -35px -12px 16px 8px 51px 31px '../img/sprite.png';
-$up: 0px 0px 0px 0px 31px 31px 51px 31px '../img/sprite.png';
+$down-hover: 35px 67px -35px -67px 16px 8px 159px 139px '../img/sprite.png';
+$down: 140px 82px -140px -82px 16px 8px 159px 139px '../img/sprite.png';
+$sert-l--arr: 140px 41px -140px -41px 19px 37px 159px 139px '../img/sprite.png';
+$sert-l-arr-hover: 0px 102px 0px -102px 19px 37px 159px 139px '../img/sprite.png';
+$sert-r-arr-hover: 23px 102px -23px -102px 19px 37px 159px 139px '../img/sprite.png';
+$sert-r-arr: 140px 0px -140px 0px 19px 37px 159px 139px '../img/sprite.png';
+$team-l-arr-hover: 35px 0px -35px 0px 31px 63px 159px 139px '../img/sprite.png';
+$team-l-arr: 70px 0px -70px 0px 31px 63px 159px 139px '../img/sprite.png';
+$team-r-arr-hover: 105px 0px -105px 0px 31px 63px 159px 139px '../img/sprite.png';
+$team-r-arr: 0px 0px 0px 0px 31px 63px 159px 139px '../img/sprite.png';
+$up: 0px 67px 0px -67px 31px 31px 159px 139px '../img/sprite.png';
 
 /*
 The provided mixins are intended to be used with the array-like variables

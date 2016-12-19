@@ -14,4 +14,21 @@ $(document).ready(function() {
 			parentLi.addClass('active');
 		}
 	});
+	$('.slider-side__inner').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1
+	});
+	$('.team-slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1
+	});
+	$('.fancybox').fancybox({
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
 });

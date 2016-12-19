@@ -1,7 +1,8 @@
 @import "_normalize.scss";
 @import "_variables.scss";
 @import "_sprite.scss";
-
+@import "_slick.scss";
+@import "_jquery.fancybox.scss";
 
 
 // .header-holder {
@@ -790,6 +791,249 @@
 	.block-title {
 		text-align: center;
 	}
+	&__inner {
+		max-width: 1220px;
+		margin: 0 auto 80px;
+	}
+	.slider-side {
+		width: 500px;
+		float: left;
+		&__inner {
+			width: 430px;
+		}
+	}
+	.slick-slide {
+		border: 1px solid #ded9d0;
+		box-shadow: 0 0 8px rgba(66, 54, 35, 0.07);
+		padding: 10px;
+		margin: 0 10px;
+		height: 286px;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.txt-side {
+		margin-left: 550px;
+		p {
+			font-size: 17px;
+			line-height: 26px;
+			color: #3a3631;
+			font-family: 'hn';
+			font-weight: 300;
+			margin: 0 0 20px;
+		}
+	}
+	.slick-list {
+		margin: 0 -10px;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin-top: -19px;
+		border: none;
+		outline: 0;
+		background-color: transparent;
+		font-size: 0px;
+		text-indent: -9999px;
+		cursor: pointer;
+		&.slick-prev {
+			@include sprite($sert-l--arr);
+			left: -35px;
+			&:hover {
+				@include sprite($sert-l-arr-hover);
+			}
+		}
+		&.slick-next {
+			@include sprite($sert-r-arr);
+			right: -35px;
+			&:hover {
+				@include sprite($sert-r-arr-hover);
+			}
+		}
+	}
+}
+
+.team {
+	background: #f2efea;
+	.block-title {
+		text-align: center;
+	}
+	&__inner {
+		max-width: 1220px;
+		margin: 0 auto 80px;
+	}
+	.slick-slider {
+		padding: 0 70px;
+	}
+	.slick-slide {
+		margin: 0 20px;
+	}
+	.slick-list {
+		margin: 0 -20px;
+	}
+
+	.img-side {
+		float: left;
+		max-width: 206px;
+		padding: 5px;
+		background: #fff;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.descr-side {
+		margin-left: 240px;
+	}
+	.name {
+		margin: 0 0 20px;
+		color: #3e3222;
+		font-weight: 300;
+		font-family: 'hn';
+		font-size: 26px;
+	}
+	p {
+		margin: 0 0 5px;
+		font-size: 14px;
+		line-height: 22px;
+		color: #625c55;
+		font-family: 'hn';
+		font-weight: 300;
+		strong {
+			font-weight: 700;
+			color: #3e3222;
+		}
+	}
+	a {
+		font-size: 14px;
+		line-height: 22px;
+		color: #625c55;
+		font-family: 'hn';
+		font-weight: 300;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin-top: -31px;
+		border: none;
+		outline: 0;
+		background-color: transparent;
+		font-size: 0px;
+		text-indent: -9999px;
+		cursor: pointer;
+		&.slick-prev {
+			@include sprite($team-l-arr);
+			left: 0px;
+			&:hover {
+				@include sprite($team-l-arr-hover);
+			}
+		}
+		&.slick-next {
+			@include sprite($team-r-arr);
+			right: 0px;
+			&:hover {
+				@include sprite($team-r-arr-hover);
+			}
+		}
+	}
+}
+
+.contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row;
+	min-height: 560px;
+	&__inner {
+		width: 440px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url(../img/contacts-bg.png) top center no-repeat;
+		background-size: cover;
+		padding: 0 40px;
+		text-align: center;
+	}
+	&__map {
+		flex: 1;
+	}
+	.heading {
+		margin: 0 0 45px;
+		font-family: 'panton';
+		font-weight: 700;
+		font-size: 32px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.address-at {
+		margin: 0 0 10px;
+		color: #fff;
+		font-weight: 300;
+		font-family: 'hn';
+		color: #fff;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.address {
+		margin: 0;
+		font-size: 14px;
+		line-height: 22px;
+		color: #c9baa6;
+		font-weight: 300;
+		font-family: 'hn';
+	}
+	.tel {
+		display: block;
+		margin: 30px 0;
+		font-size: 24px;
+		font-family: 'panton';
+		font-weight: 700;
+		color: #fff;
+		text-decoration: none;
+	}
+	.email {
+		font-size: 15px;
+		color: #fff;
+		margin: 0;
+		font-family: 'panton';
+		a {
+			color: #c9baa6;
+			text-decoration: none;
+			margin-left: 3px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.call-us {
+		@extend .animated;
+		max-width: 258px;
+		display: block;
+		margin: 50px auto 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 15px;
+		color: #8bc53b;
+		border: 1px solid #8bc53b;
+		border-radius: 30px;
+		font-family: 'hn';
+		font-weight: 900;
+		padding: 18px 0;
+		&:hover {
+			background: #8bc53b;
+			color: #fff;
+		}
+	}
+
 }
 
 
