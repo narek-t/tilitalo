@@ -14,6 +14,7 @@ $(document).ready(function() {
 			parentLi.addClass('active');
 		}
 	});
+
 	$('.slider-side__inner').slick({
 		infinite: true,
 		slidesToShow: 2,
@@ -49,6 +50,36 @@ $(document).ready(function() {
 	    },
 	  ]
 	});
+
+	$('.offers__inner').slick({
+		infinite: true,
+		slidesToShow: 6,
+		// autoplay: true,
+		prevArrow: false,
+		nextArrow: false,
+		responsive: [
+	    {
+	      breakpoint: 1400,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        slidesToShow: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 540,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    },
+	  ]
+	});
+
+
 	$('.fancybox').fancybox({
 		helpers: {
 			overlay: {

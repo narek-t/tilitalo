@@ -552,8 +552,23 @@
 .offers {
 	padding: 0 40px;
 	margin-bottom: 80px;
+
 	.block-title {
 		text-align: center;
+	}
+	.slick-arrow {
+		display: none !important;
+	}
+	.slick-track {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.slick-list {
+		margin: 0 -10px;
+		transform: none;
 	}
 	&__inner {
 		display: -webkit-flex;
@@ -563,11 +578,19 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
+		overflow: hidden;
 	}
 	&__item {
-		width: 16%;
 		border: 1px solid #ded9d0;
 		box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
+		margin: 0 10px;
+		// max-width: 284px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		height: auto;
 		.img-side {
 			margin-bottom: 10px;
 			img {
