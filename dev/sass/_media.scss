@@ -47,8 +47,8 @@
 	.tel-side .tel {
 		font-size: 15px;
 	}
-	.intro {
-		background-position: top 50px center;
+	.main-content {
+		padding-top: 50px;
 	}
 	.tel-side .email-block {
 		margin-top: 7px;
@@ -137,6 +137,26 @@
 	.contacts__inner {
 		width: 340px;
 	}
+	.services-list li {
+		width: 48%;
+		float: none;
+	}
+	.page-sidebar {
+		width: 250px;
+	}
+	.page-content {
+		margin-left: 270px;
+	}
+	.services-list li img {
+		height: 220px;
+	}
+	.services-list li .img-side {
+		min-height: 220px;
+	}
+	.services-list .individual {
+		height: 220px;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -150,7 +170,10 @@
 		padding-bottom: 20px;
 	}
 	.intro {
-		padding: 0 15px;
+		padding: 100px 15px;
+		display: block;
+		min-height: 1px;
+
 	}
 	.intro .links-wrap {
 		margin-top: 30px;;
@@ -210,7 +233,30 @@
 		margin: 0 auto;
 		max-width: 230px;
 	}
+	.page-sidebar li.current-menu-item a:after {
+		display: none;
+	}
+	.page-sidebar {
+		width: 100%;
+		float: none;
+		margin-bottom: 30px;
+	}
+	.page-content {
+		margin-left: 0;
+	}
 	
+}
+
+@media screen and (max-width: 670px) {
+	.logo-side .slogan {
+		display: none;
+	}
+	.offers .slick-list {
+		margin: 0;
+	}
+	.offers__item {
+		width: 100% !important;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -270,6 +316,18 @@
 	.tel-side .callback {
 		margin-left: 0;
 		padding: 0 15px;
+	}
+	.services-list li {
+		width: 100%;
+		display: block;
+		margin-right: 0;
+	}
+	.services-list li .img-side {
+		min-height: 1px;
+	}
+	.services-list li img {
+		max-width: 100%;
+		height: auto;
 	}
 }
 
