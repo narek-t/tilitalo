@@ -1,0 +1,271 @@
+extends _layout
+block content
+	main.main-content
+		.page-intro(style="background-image: url(img/page-bg.jpg)")
+			.page-intro__inner
+				h1.page-title наши Услуги
+				.breadcrumbs
+					a(href="#") Главная 
+					span > 
+					span Наши услуги 
+		.page.detail
+			.container
+				.page-inner.cf
+					aside.page-sidebar
+						ul.sidebar-menu
+							li.current-menu-item
+								a(href="#") Строительство коттеджей
+							li
+								a(href="#") Создание домов из камня
+							li
+								a(href="#") Установка инженерных коммуникаций
+							li
+								a(href="#") Ландшафтый дизайн
+							li
+								a(href="#") Строительство бань и саун
+							li
+								a(href="#") Строительство летних домов
+					.page-content
+						h2 Что мы строим
+						.detail__inner.cf
+							.text-side
+								p Мы строим загородные дома в Санкт-Петербурге и Ленинградской области профессионально и максимально быстро – это самое главное, что вам нужно знать о строительной компании SuomenTalot, если вы думаете о том, чтобы начать работать с нами.
+								p На рынке мы с 2009 года. Все завершенные объекты и находящиеся в стадии строительства, вы можете увидеть на карте ниже. Так же мы регулярно публикуем отчеты с объектов в специальном разделе на сайте.
+							.slider-side
+								.detail-slider
+									img(src="img/slide1.jpg", alt="")
+									img(src="img/slide1.jpg", alt="")
+									img(src="img/slide1.jpg", alt="")
+						table.detail-table
+							tr
+								th Название
+								th срок постройки
+								th цена
+							tr
+								td Строительство коттеджей
+								td 1 год
+								td 4 560 000 руб.
+							tr
+								td Установка инженерных коммуникаций
+								td 2 месяца
+								td 23 000 руб.
+							tr
+								td Ландшафтный дизайн
+								td 3 месяца
+								td 89 000 руб.
+							tr
+								td Строительство бань и саун
+								td 2 месяца
+								td 120 000 руб.
+							tr
+								td Строительство летних домов
+								td 3 месяца
+								td 1 450 000 руб.
+			.detail-text.cf
+				.container
+					h2.block-title Заголовок для текстовой зоны
+					p Мы строим загородные дома из кирпича уже более 5 лет и за это время мы возвели дома самой разной конфигурации – от огромных, площадью более 1500 метров, до небольших одноэтажных коттеджей. Сегодняшние технологии позволяют строить кирпичные коттеджи за вполне приемлемые деньги. При этом вы получаете теплый, надежный дом, который всегда будет в цене. Поэтому строительство коттеджа из кирпича это самое правильное решение, если у вас стоит непростой выбор среди разнообразия материалов.
+					p Обычно для возведения несущих стен при строительстве кирпичных домов под ключ мы используем крупноформатные поризованные блоки Rauf. Размеры блока и его характеристики позволяют возводить стены быстрее, с минимальным количеством растворных швов. Все это снижает стоимость строительства без потери качества.
+			.detail-tech
+				.container
+					h2.block-title Используемые технологии
+					ul.tech-list
+						li
+							.img-side
+								img(src="img/tech1.png", alt="")
+							p.heading Керамзитобетонные камни
+							p.descr Внешняя стена 400 мм, однослойная конструкция, которая не требует дополнительного утепления
+							table
+								tr
+									td Прочность
+									td
+										span.active
+										span.active
+										span.active
+										span.active
+										span.active
+								tr
+									td Энергоэффективность
+									td
+										span.active
+										span.active
+										span
+										span
+										span
+								tr
+									td Огнестойкость
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+								tr
+									td Надежность
+									td
+										span.active
+										span
+										span
+										span
+										span
+								tr
+									td Экологичность
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+							a.view-more(href="#") Подробнее
+						li
+								.img-side
+									img(src="img/tech2.png", alt="")
+								p.heading Поризованный кирпич
+								p.descr Внешняя стена до 510 мм, теплый кирпичный дом, который всегда будет в цене
+								table
+									tr
+										td Прочность
+										td
+											span.active
+											span.active
+											span.active
+											span.active
+											span.active
+									tr
+										td Энергоэффективность
+										td
+											span.active
+											span.active
+											span
+											span
+											span
+									tr
+										td Огнестойкость
+										td
+											span.active
+											span.active
+											span.active
+											span
+											span
+									tr
+										td Надежность
+										td
+											span.active
+											span
+											span
+											span
+											span
+									tr
+										td Экологичность
+										td
+											span.active
+											span.active
+											span.active
+											span
+											span
+								a.view-more(href="#") Подробнее
+							li
+							.img-side
+								img(src="img/tech3.png", alt="")
+							p.heading Энергоэффективные блоки
+							p.descr Внешняя стена 350 мм, финская технология строительства, супер теплый дом
+							table
+								tr
+									td Прочность
+									td
+										span.active
+										span.active
+										span.active
+										span.active
+										span.active
+								tr
+									td Энергоэффективность
+									td
+										span.active
+										span.active
+										span
+										span
+										span
+								tr
+									td Огнестойкость
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+								tr
+									td Надежность
+									td
+										span.active
+										span
+										span
+										span
+										span
+								tr
+									td Экологичность
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+							a.view-more(href="#") Подробнее
+						li
+							.img-side
+								img(src="img/tech4.png", alt="")
+							p.heading Газобетонные блоки
+							p.descr Внешняя стена до 400 мм, бюджетное решение для различных типов домов
+							table
+								tr
+									td Прочность
+									td
+										span.active
+										span.active
+										span.active
+										span.active
+										span.active
+								tr
+									td Энергоэффективность
+									td
+										span.active
+										span.active
+										span
+										span
+										span
+								tr
+									td Огнестойкость
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+								tr
+									td Надежность
+									td
+										span.active
+										span
+										span
+										span
+										span
+								tr
+									td Экологичность
+									td
+										span.active
+										span.active
+										span.active
+										span
+										span
+							a.view-more(href="#") Подробнее
+
+
+
+
+
+
+
+
+
+
+block inlineScripts
