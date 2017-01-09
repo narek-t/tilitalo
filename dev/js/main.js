@@ -1,4 +1,21 @@
 $(document).ready(function() {
+	$(".intro").vegas({
+		animation: 'random',
+		transitionDuration: 3000,
+		delay: 10000,
+	    slides: [
+	        { src: "/img/top.jpg" },
+	        { src: "/img/top2.jpg" },
+	    ],
+	});
+
+	$('span.vegas-next').on('click', function () {
+	    $(".intro").vegas('next');
+	});
+	$('span.vegas-prev').on('click', function () {
+	    $(".intro").vegas('previous');
+	});
+
 	$('.menu-toggle').click(function(event) {
 		event.preventDefault();
 		$(this).toggleClass('active');

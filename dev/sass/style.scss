@@ -3,6 +3,7 @@
 @import "_sprite.scss";
 @import "_slick.scss";
 @import "_jquery.fancybox.scss";
+@import "_vegas.min.scss";
 
 
 // .header-holder {
@@ -179,19 +180,63 @@
 
 .main-content {
 	padding-top: 74px;
+	position: relative;
 }
-.intro {
-	background: url(../img/top.jpg) top center no-repeat;
-	background-size: cover;
+
+.vegas-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	flex-flow: column;
-	justify-content: center;
+}
+
+.vegas-arr {
+	position: absolute;
+	display: block;
+	z-index: 10;
+	cursor: pointer;
+	top: 45%;
+	transform: translateY(-50%);
+}
+
+.vegas-prev {
+	@include sprite($team-l-arr);
+	left: 0px;
+	&:hover {
+		@include sprite($team-l-arr-hover);
+	}
+}
+
+.vegas-next {
+	@include sprite($team-r-arr);
+	right: 0px;
+	&:hover {
+		@include sprite($team-r-arr-hover);
+	}
+}
+
+.intro-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.intro {
+	// background: url(../img/top.jpg) top center no-repeat;
+	// background-size: cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 	text-align: center;
+	width: 100%;
 	&__inner {
 		max-width: 800px;
 		margin: auto;
@@ -978,7 +1023,7 @@
 	display: -o-flex;
 	display: flex;
 	flex-flow: row;
-	min-height: 560px;
+	height: 560px;
 	width: 100%;
 	&__inner {
 		width: 440px;
