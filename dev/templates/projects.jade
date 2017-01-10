@@ -1,0 +1,295 @@
+extends _layout
+block content
+	main.main-content
+		.page-intro(style="background-image: url(img/page-bg.jpg)")
+			.page-intro__inner
+				h1.page-title Каталог проектов
+				.breadcrumbs
+					a(href="#") Главная 
+					span > 
+					span Каталог проектов
+		.page
+			.container
+				.page-inner.cf
+					aside.page-sidebar.filter-sidebar
+						.filter-block.range-slider-block.cf
+							p.heading Площадь дома
+							#range-slider
+							p#range-slider-min 90
+								span м
+									sup 2
+							p#range-slider-max 260
+								span м
+									sup 2
+
+
+						.filter-block.cf
+							p.heading Количество комнат
+							input.filter-input.filter-checkbox#count2(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count2") 2
+							input.filter-input.filter-checkbox#count6(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count6") 6
+							input.filter-input.filter-checkbox#count3(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count3") 3
+							input.filter-input.filter-checkbox#count7(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count7") 7
+							input.filter-input.filter-checkbox#count4(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count4") 4
+							input.filter-input.filter-checkbox#count8(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count8") 8
+							input.filter-input.filter-checkbox#count5(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count5") 5
+							input.filter-input.filter-checkbox#count9(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="count9") 9
+
+						.filter-block.cf
+							p.heading Спальни
+							input.filter-input.filter-checkbox#bedroom1(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bedroom1") 1
+							input.filter-input.filter-checkbox#bedroom3(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bedroom3") 3
+							input.filter-input.filter-checkbox#bedroom2(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bedroom1") 2
+							input.filter-input.filter-checkbox#bedroom4(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bedroom4") 4
+
+						.filter-block.cf
+							p.heading Ванные
+							input.filter-input.filter-checkbox#bath1(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bath1") 1
+							input.filter-input.filter-checkbox#bath2(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="bath2") 2
+
+						.filter-block.cf
+							p.heading Фундамент
+							input.filter-input.filter-checkbox#fun1(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="fun1") Ленточный
+							input.filter-input.filter-checkbox#fun2(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="fun2") Блоки
+							input.filter-input.filter-checkbox#fun3(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="fun3") Каменный
+							input.filter-input.filter-checkbox#fun4(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="fun4") Газоблок
+							input.filter-input.filter-checkbox#fun5(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="fun5") Бетонный
+
+						.filter-block.cf
+							p.heading Этажность
+							input.filter-input.filter-checkbox#floor1(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="floor1") 1
+							input.filter-input.filter-checkbox#floor3(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="floor3") 3
+							input.filter-input.filter-checkbox#floor2(type="checkbox")
+							label.filter-label.filter-checkbox--label(for="floor2") 2
+
+
+						.filter-block.cf
+							p.heading Мансарда/Терасса
+							input.filter-input.filter-radio#ter1(type="radio" name="ter" checked)
+							label.filter-label.filter-radio--label(for="ter1") да
+							input.filter-input.filter-radio#ter2(type="radio" name="ter")
+							label.filter-label.filter-radio--label(for="ter2") нет
+
+						.filter-block.cf
+							p.heading Балкон
+							input.filter-input.filter-radio#bal1(type="radio" name="bal")
+							label.filter-label.filter-radio--label(for="bal1") да
+							input.filter-input.filter-radio#bal2(type="radio" name="bal")
+							label.filter-label.filter-radio--label(for="bal2") нет
+
+						.filter-block.cf
+							p.heading Сауна
+							input.filter-input.filter-radio#sauna1(type="radio" name="sauna")
+							label.filter-label.filter-radio--label(for="sauna1") да
+							input.filter-input.filter-radio#sauna2(type="radio" name="sauna")
+							label.filter-label.filter-radio--label(for="sauna2") нет
+						span.clear-filter(href="#") Сбросить фильтры
+
+							
+					.page-content.projects-content
+						h2 Большой выбор проектов любой сложности
+						.choosed-filters
+							.choosed-filter
+								strong Площадь дома:
+								span 150м2 - 245м2
+								a.close(href="#")
+							.choosed-filter
+								strong Количество комнат:
+								span 2
+								a.close(href="#")
+							.choosed-filter
+								strong Мансарда/терасса:
+								span Да
+								a.close(href="#")
+							.choosed-filter.reset-filter
+								a(href="#") Сбросить фильтры
+						p Показано: 
+							strong 26 проектов
+						.projects-wrapper.offers
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ 
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+
+							.offers__item
+								.img-side
+									img(src="img/offer.jpg", alt="")
+								p.heading СОВРЕМЕННЫЙ 
+								table
+									tr
+										td Площадь:
+										td 145 м²
+									tr
+										td Проект:
+										td 21 750 руб.
+									tr
+										td Строительство:
+										td 2 547 900 грн.
+								.link-wrap
+									a.order(href="#") Заказать
+									a.view-more(href="#") Подробнее
+				
+
+
+
+
+
+
+
+
+
+block inlineScripts

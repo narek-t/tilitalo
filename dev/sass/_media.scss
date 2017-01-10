@@ -15,6 +15,12 @@
 	}
 }
 
+@media screen and (max-width: 1150px) {
+	.projects-wrapper.offers .offers__item {
+		width: 48%;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.site-header {
 		height: 50px;

@@ -118,4 +118,24 @@ $(document).ready(function() {
 	 //    },
 	 //  ]
 	});
+
+	var rangeSlider = document.getElementById('range-slider');
+	if(rangeSlider) {
+		noUiSlider.create(rangeSlider, {
+			start: [ 90, 260 ],
+			connect: true,
+			range: {
+				'min': 30,
+				'max': 300
+			}
+		});
+		var snapValues = [
+		    document.getElementById('range-slider-min'),
+		   	document.getElementById('range-slider-max')
+		];
+		rangeSlider.noUiSlider.on('update', function( values, handle ) {
+	    snapValues[handle].innerHTML = values[handle] + ' <span>м<sup>2</sup></span>';
+	    // snapInputs[handle].value = values[handle];
+	   });
+	}
 });

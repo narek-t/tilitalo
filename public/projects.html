@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all-wrapper">
+      <div class="header-holder"></div>
+      <header class="site-header cf">
+        <button class="menu-toggle">
+          <div class="holder"><span></span><span></span><span></span></div>
+        </button>
+        <div class="menu">
+          <div class="menu__inner">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Наши услуги</a></li>
+              <li><a href="#">Каталог проектов</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-side"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+          <p class="slogan">Загородное строительство частных домов</p>
+        </div>
+        <div class="tel-side">
+          <div class="email-block"><a href="tel:8 (800) 456-76-67" class="tel">8 (800) 456-76-67</a>
+            <p class="email">E-mail:<a href="mailto:info@tiilitalo.ru">info@tiilitalo.ru</a></p>
+          </div><a href="#" class="callback">Связаться с нами</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <div style="background-image: url(img/page-bg.jpg)" class="page-intro">
+          <div class="page-intro__inner">
+            <h1 class="page-title">Каталог проектов</h1>
+            <div class="breadcrumbs"><a href="#">Главная </a><span>> </span><span>Каталог проектов</span></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="container">
+            <div class="page-inner cf">
+              <aside class="page-sidebar filter-sidebar">
+                <div class="filter-block range-slider-block cf">
+                  <p class="heading">Площадь дома</p>
+                  <div id="range-slider"></div>
+                  <p id="range-slider-min">90<span>м<sup>2</sup></span></p>
+                  <p id="range-slider-max">260<span>м<sup>2</sup></span></p>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Количество комнат</p>
+                  <input id="count2" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count2" class="filter-label filter-checkbox--label">2</label>
+                  <input id="count6" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count6" class="filter-label filter-checkbox--label">6</label>
+                  <input id="count3" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count3" class="filter-label filter-checkbox--label">3</label>
+                  <input id="count7" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count7" class="filter-label filter-checkbox--label">7</label>
+                  <input id="count4" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count4" class="filter-label filter-checkbox--label">4</label>
+                  <input id="count8" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count8" class="filter-label filter-checkbox--label">8</label>
+                  <input id="count5" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count5" class="filter-label filter-checkbox--label">5</label>
+                  <input id="count9" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="count9" class="filter-label filter-checkbox--label">9</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Спальни</p>
+                  <input id="bedroom1" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bedroom1" class="filter-label filter-checkbox--label">1</label>
+                  <input id="bedroom3" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bedroom3" class="filter-label filter-checkbox--label">3</label>
+                  <input id="bedroom2" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bedroom1" class="filter-label filter-checkbox--label">2</label>
+                  <input id="bedroom4" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bedroom4" class="filter-label filter-checkbox--label">4</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Ванные</p>
+                  <input id="bath1" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bath1" class="filter-label filter-checkbox--label">1</label>
+                  <input id="bath2" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="bath2" class="filter-label filter-checkbox--label">2</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Фундамент</p>
+                  <input id="fun1" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="fun1" class="filter-label filter-checkbox--label">Ленточный</label>
+                  <input id="fun2" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="fun2" class="filter-label filter-checkbox--label">Блоки</label>
+                  <input id="fun3" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="fun3" class="filter-label filter-checkbox--label">Каменный</label>
+                  <input id="fun4" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="fun4" class="filter-label filter-checkbox--label">Газоблок</label>
+                  <input id="fun5" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="fun5" class="filter-label filter-checkbox--label">Бетонный</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Этажность</p>
+                  <input id="floor1" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="floor1" class="filter-label filter-checkbox--label">1</label>
+                  <input id="floor3" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="floor3" class="filter-label filter-checkbox--label">3</label>
+                  <input id="floor2" type="checkbox" class="filter-input filter-checkbox"/>
+                  <label for="floor2" class="filter-label filter-checkbox--label">2</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Мансарда/Терасса</p>
+                  <input id="ter1" type="radio" name="ter" checked="checked" class="filter-input filter-radio"/>
+                  <label for="ter1" class="filter-label filter-radio--label">да</label>
+                  <input id="ter2" type="radio" name="ter" class="filter-input filter-radio"/>
+                  <label for="ter2" class="filter-label filter-radio--label">нет</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Балкон</p>
+                  <input id="bal1" type="radio" name="bal" class="filter-input filter-radio"/>
+                  <label for="bal1" class="filter-label filter-radio--label">да</label>
+                  <input id="bal2" type="radio" name="bal" class="filter-input filter-radio"/>
+                  <label for="bal2" class="filter-label filter-radio--label">нет</label>
+                </div>
+                <div class="filter-block cf">
+                  <p class="heading">Сауна</p>
+                  <input id="sauna1" type="radio" name="sauna" class="filter-input filter-radio"/>
+                  <label for="sauna1" class="filter-label filter-radio--label">да</label>
+                  <input id="sauna2" type="radio" name="sauna" class="filter-input filter-radio"/>
+                  <label for="sauna2" class="filter-label filter-radio--label">нет</label>
+                </div><span href="#" class="clear-filter">Сбросить фильтры</span>
+              </aside>
+              <div class="page-content projects-content">
+                <h2>Большой выбор проектов любой сложности</h2>
+                <div class="choosed-filters">
+                  <div class="choosed-filter"><strong>Площадь дома:</strong><span>150м2 - 245м2</span><a href="#" class="close"></a></div>
+                  <div class="choosed-filter"><strong>Количество комнат:</strong><span>2</span><a href="#" class="close"></a></div>
+                  <div class="choosed-filter"><strong>Мансарда/терасса:</strong><span>Да</span><a href="#" class="close"></a></div>
+                  <div class="choosed-filter reset-filter"><a href="#">Сбросить фильтры</a></div>
+                </div>
+                <p>Показано: <strong>26 проектов</strong></p>
+                <div class="projects-wrapper offers">
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ </p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ ДОМ С ТЕРРАСОЙ НА ВТОРОМ ЭТАЖЕ</p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                  <div class="offers__item">
+                    <div class="img-side"><img src="img/offer.jpg" alt=""/></div>
+                    <p class="heading">СОВРЕМЕННЫЙ </p>
+                    <table>
+                      <tr>
+                        <td>Площадь:</td>
+                        <td>145 м²</td>
+                      </tr>
+                      <tr>
+                        <td>Проект:</td>
+                        <td>21 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Строительство:</td>
+                        <td>2 547 900 грн.</td>
+                      </tr>
+                    </table>
+                    <div class="link-wrap"><a href="#" class="order">Заказать</a><a href="#" class="view-more">Подробнее</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top cf">
+          <div class="logo"><a href="#"><img src="img/logo.png" alt=""/></a>
+            <p class="slogan">Загородное строительство частных домов</p>
+          </div>
+          <div class="footer-nav">
+            <ul class="first">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Наши услуги</a></li>
+              <li><a href="#">Каталог проектов</a></li>
+              <li><a href="#">Портфолио</a></li>
+            </ul>
+            <ul class="second">
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <p class="heading">Мы в сети:</p>
+            <ul>
+              <li class="fb"><a href="#"><span></span></a></li>
+              <li class="vk"><a href="#"><span></span></a></li>
+              <li class="twit"><a href="#"><span></span></a></li>
+              <li class="gplus"><a href="#"><span></span></a></li>
+            </ul>
+            <p class="made-by">Сайт разроботан:<a href="#">Копират студии</a></p>
+          </div>
+        </div>
+        <div class="copyright cf">
+          <p class="copyright__txt">Copyright 2016, Tililitalo</p>
+          <div class="footer-share">
+            <p>Рассказать друзьям:</p>
+            <ul class="share-list">
+              <li class="fb"><a href="#" class="icon"></a><span class="number">13</span></li>
+              <li class="twit"><a href="#" class="icon"></a><span class="number">36</span></li>
+              <li class="gplus"><a href="#" class="icon"></a><span class="number">25</span></li>
+              <li class="pint"><a href="#" class="icon"></a><span class="number">7</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
