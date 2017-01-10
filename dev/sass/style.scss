@@ -1982,6 +1982,51 @@
 	}
 }
 
+.pagination {
+	text-align: center;
+	font-family: 'hn';
+	margin-bottom: 50px;
+	a {
+		font-size: 15px;
+		color: #3e3222;
+		text-decoration: none;
+		display: inline-block;
+		width: 42px;
+		height: 42px;
+		border: 1px solid #e0dcd4;
+		line-height: 42px;
+		border-radius: 50%;
+		vertical-align: middle;
+		margin: 0 5px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		@extend .animated;
+		&:hover {
+			color: #fff;
+			background-color: #3e3222;
+		}
+		&.pagination-prev {
+			margin-right: 15px;
+			background-image: url(../img/pagination-prev.png);
+			&:hover {
+				background-image: url(../img/pagination-prev-hover.png);
+			}
+		}
+		&.pagination-next {
+			background-image: url(../img/pagination-next.png);
+			&:hover {
+				background-image: url(../img/pagination-next-hover.png);
+			}
+			margin-left: 15px;
+		}
+	}
+	span {
+		font-size: 15px;
+		color: #3e3222;
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
 
 
 
