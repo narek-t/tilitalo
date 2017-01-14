@@ -138,4 +138,41 @@ $(document).ready(function() {
 	    // snapInputs[handle].value = values[handle];
 	   });
 	}
+
+
+
+	if(document.getElementById('chronology')) {
+		var galleryTop = new Swiper('.chronology-top', {
+	        nextButton: '.swiper-next',
+	        prevButton: '.swiper-prev',
+	        spaceBetween: 10,
+	      onSlideChangeEnd: function(swiper){
+	            var activeIndex = swiper.activeIndex;
+	            $(galleryThumbs.slides).removeClass('is-selected');
+	            $(galleryThumbs.slides).eq(activeIndex).addClass('is-selected');
+	            galleryThumbs.slideTo(activeIndex,500, false);
+
+	        }
+
+	    });
+	    var galleryThumbs = new Swiper('.chronology-bottom', {
+	        freeMode: true,
+	        centeredSlides: false,
+	        slidesPerView: 'auto',
+	        onClick: function (swiper, event){
+	            var clicked = swiper.clickedIndex;
+	            swiper.activeIndex = clicked; //don't need this
+	            swiper.updateClasses() //don't need this
+	            if(clicked) {
+	            	$(swiper.slides).removeClass('is-selected');
+	           		 $(swiper.clickedSlide).addClass('is-selected');
+	            	galleryTop.slideTo(clicked,500, false);
+	            }
+	        },
+	    });
+	    $('.chronology-bottom .swiper-slide:first-child').addClass('is-selected');
+	}
+
+     
+
 });
