@@ -2331,6 +2331,14 @@
 		background: #f2efea;
 		position: relative;
 		height: 40px;
+		&::after {
+			content: '';
+			height: 30px;
+			top: -28px;
+			left: 0;
+			width: 100%;
+			position: absolute;
+		}
 		.buble {
 			display: block;
 			width: 16px;

@@ -1,13 +1,13 @@
 $(document).ready(function() {
-	$(".intro").vegas({
-		animation: 'random',
-		transitionDuration: 3000,
-		delay: 10000,
-	    slides: [
-	        { src: "/img/top.jpg" },
-	        { src: "/img/top2.jpg" },
-	    ],
-	});
+	// $(".intro").vegas({
+	// 	animation: 'random',
+	// 	transitionDuration: 3000,
+	// 	delay: 10000,
+	//     slides: [
+	//         { src: "/img/top.jpg" },
+	//         { src: "/img/top2.jpg" },
+	//     ],
+	// });
 
 	$('span.vegas-next').on('click', function () {
 	    $(".intro").vegas('next');
@@ -161,13 +161,14 @@ $(document).ready(function() {
 	        slidesPerView: 'auto',
 	        onClick: function (swiper, event){
 	            var clicked = swiper.clickedIndex;
-	            swiper.activeIndex = clicked; //don't need this
-	            swiper.updateClasses() //don't need this
-	            if(clicked) {
+	            // swiper.activeIndex = clicked; //don't need this
+	            // swiper.updateClasses() //don't need this
+	            console.log('click')
+	       
 	            	$(swiper.slides).removeClass('is-selected');
 	           		 $(swiper.clickedSlide).addClass('is-selected');
 	            	galleryTop.slideTo(clicked,500, false);
-	            }
+	        
 	        },
 	    });
 	    $('.chronology-bottom .swiper-slide:first-child').addClass('is-selected');
