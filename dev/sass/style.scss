@@ -2331,6 +2331,19 @@
 		background: #f2efea;
 		position: relative;
 		height: 40px;
+		&:last-child {
+			&::before {
+				content: '';
+				width: 19px;
+				height: 40px;
+				position: absolute;
+				top: 0px;
+				z-index: 999;
+				background: url(../img/some.png) no-repeat;
+				background-size: 19px 100%;
+				right: 0;
+			}
+		}
 		&::after {
 			content: '';
 			height: 30px;
@@ -2567,11 +2580,135 @@
 }
 
 
+.item-page {
+	h2 {
+		font: 700 26px 'panton';
+		color: #3e3222;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 40px 0;
+	}
+	p {
+		font: 300 15px/24px 'hn';
+		color: #3e3222;
+	}
+}
 
+.item-descr-wrapper {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	.item-table {
+		flex: 1;
+		padding-right: 30px;
+		table {
+			width: 100%;
+			table-layout: fixed;
+			font: 300 15px 'hn';
+			color: #3a3631;
+		}
+		td {
+			border-top: 1px solid #e0dad1;
+			padding: 15px 5px;
+		}
+		tr:last-child td {
+			border-bottom: 1px solid #e0dad1;
+		}
+		td:nth-child(odd) {
+			font-weight: 700;
+		}
+	}
+}
 
+.item-descr-slider {
+	width: 70%;
+	.slick-slide img {
+		max-width: 100%;
+		height: auto;
+	}
+}
 
+.item-page {
+	.detail-tech {
+		border-bottom: none;
+		padding-bottom: 40px;
+	}
+	.project-page__offer {
+		margin-top: 50px;
+		p {
+			color: #fff;
+			font-size: 20px;
+			font-family: 'hn';
+			font-weight: 300;
+			span {
+				color: #8bc53b;
+				font: 700 36px 'hn';
+				margin-left: 10px;
+				&.small {
+					text-transform: none;
+					font-size: 24px;
+					margin-left: 0;
+				}
+			}
+			& > span {
+				white-space: nowrap;
+			}
+		}
+		a {
+			width: 250px;
+		}
+		a.wh {
+			border-color: #fff;
+			color: #fff;
+			background: transparent;
+			&:hover {
+				border-color: #8bc53b;
+				background: #8bc53b;
+			}
+		}
+	}
+}
 
+.in-portfolio {
+	padding-bottom: 60px;
+	border-bottom: 1px solid #e0dad1;
+}
 
+.in-portfolio__inner {
+	background: url(../img/in-portfolio-bg.png) top center no-repeat;
+	background-size: cover;
+	padding: 30px 0;
+	text-align: center;
+	p {
+		display: inline-block;
+		vertical-align: middle;
+		font: 300 24px 'hn';
+		color: #3e3222;
+		margin-right: 50px;
+	}
+	a {
+		display: inline-block;
+		width: 260px;
+		height: 54px;
+		border-radius: 30px;
+		border: 1px solid transparent;
+		margin: 0 10px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 52px;
+		font-family: panton;
+		font-size: 16px;
+		background: #8bc53b;
+		font-weight: 700;
+		@extend .animated;
+		&:hover {
+			background: #6aa51b;
+		}
+	}
+
+}
 
 
 
