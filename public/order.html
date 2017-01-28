@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all-wrapper">
+      <div class="header-holder"></div>
+      <header class="site-header cf">
+        <button class="menu-toggle">
+          <div class="holder"><span></span><span></span><span></span></div>
+        </button>
+        <div class="menu">
+          <div class="menu__inner">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Наши услуги</a></li>
+              <li><a href="#">Каталог проектов</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-side"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+          <p class="slogan">Загородное строительство частных домов</p>
+        </div>
+        <div class="tel-side">
+          <div class="email-block"><a href="tel:8 (800) 456-76-67" class="tel">8 (800) 456-76-67</a>
+            <p class="email">E-mail:<a href="mailto:info@tiilitalo.ru">info@tiilitalo.ru</a></p>
+          </div><a href="#" class="callback">Связаться с нами</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="intro-wrapper order-page page"><span class="vegas-next vegas-arr"></span><span class="vegas-prev vegas-arr"></span>
+          <div class="intro project-page__intro">
+            <div class="intro__inner">
+              <h2 class="page-title">Получите <span class="green">БЕСПЛАТНУЮ </span>оценку стоимости строительства от компании <span>TILITALO </span>по <span class="green">ИНДИВИДУАЛЬНОМУ </span>проекту</h2>
+            </div><a href="#order" class="to-bottom"></a>
+          </div>
+        </div>
+        <div id="order" class="order__content">
+          <div class="container">
+            <p>Вы планируете построить дом своей мечты? Расскажите нам каким он должен быть. Наши профессиональные инженеры подготовят оценку вашего проэкта и подскажут все особенности строительства. Если Вы еще не решили, чего Вы хотите, оставьте в форме только свои контактные данные и мы поможем Вам создать ваш индивидуальный проэкт.</p>
+            <div class="order-form">
+              <form>
+                <div class="order-form__row">
+                  <label class="required">Ваше имя <span>* </span>
+                    <input type="text"/>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label class="required">Номер телефона <span>* </span>
+                    <input type="tel"/>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label class="required">Адрес электронной почты <span>* </span>
+                    <input type="email"/>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <div class="order-form__col">
+                    <label for="area">Площадь дома</label>
+                    <input type="text" id="area"/>
+                  </div>
+                  <div class="order-form__col">
+                    <label for="floor">Этажность дома</label>
+                    <input type="text" id="floor"/>
+                  </div>
+                </div>
+                <div class="order-form__row">
+                  <label>Тип строения
+                    <input type="text" placeholder="Например: каркасный, кирпичный, деревянный"/>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Тип фундамента
+                    <input type="text" placeholder="Например: ленточный, каменный, бетонный"/>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Спальни: количество, площадь, пожелания
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Ванные комнаты и сауна : количество, площадь, пожелания
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Кухня и гостевая зона  : количество, площадь, пожелания
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Гараж: площадь, пожелания
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Чердак, мансарда, терраса 
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Инженерные коммуникации (отопление, водоснабжение, печи, камины, бассейн и т.п.)
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row">
+                  <label>Опишите каким Вы видите свой дом
+                    <textarea style="height: 200px;"></textarea>
+                  </label>
+                </div>
+                <div class="order-form__row"><span class="fake-label">Приложите наброски плана или фотографии, которые помогут нам понять ваши пожелания</span>
+                  <div class="file-input-col">
+                    <ul id="fileList" class="file-list"></ul>
+                    <label for="filesToUpload" class="file-label">Загрузить файл</label>
+                    <input type="file" multiple="" id="filesToUpload"/>
+                  </div>
+                </div>
+                <input type="submit" value="отправить" class="send-btn"/>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="order-why cf">
+          <div class="container">
+            <h2 class="block-title">Почему мы?</h2>
+            <ul class="why__list">
+              <li>
+                <div class="img-wrap"><img src="img/why1.png" alt=""/></div>
+                <p>Качественные и современные материалы </p>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="img/why2.png" alt=""/></div>
+                <p>Высокая квалификация сотрудников</p>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="img/why3.png" alt=""/></div>
+                <p>1369 построенных домов</p>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="img/why4.png" alt=""/></div>
+                <p>Гарантия качества - 5 лет</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="order-stages cf">
+          <div class="container">
+            <h2 class="block-title">Этапы строительства</h2>
+            <div class="stage-slider-wrapper">
+              <div class="arr-container">
+                <div class="slick-next slick-arr"></div>
+                <div class="slick-prev slick-arr"></div>
+              </div>
+              <div class="stage-slider">
+                <div class="stage-slide">
+                  <div class="img-wrap"><img src="img/stage1.png" alt=""/><span class="count">1</span></div>
+                  <p class="heading">1 этап. Проектирование</p>
+                  <p>Проектирование дома начинается с создания эскизного проекта.</p>
+                  <p>В программе ArchiCad строится 3D-модель будущего дома, которая позволяет еще до начала строительства увидеть на экране монитора, каким будет дом, и даже «походить» по нему. Эскизный проект загородного дома оформляется в виде альбома, который содержит планы, фасады, разрезы дома и его привязку к участку. Такой альбом необходим для получения разрешения на строительство в местной администрации.</p>
+                  <p>Для того, чтобы приступить к строительству дома, эскизного проекта недостаточно, необходимо подробное описание всех деталей с указанием размеров и используемых материалов, а также расчет конструктивных элементов дома. Полная информация, необходимая для строительства, содержится в рабочем проекте дома. Важно, чтобы рабочий проект был сделан индивидуально и с учетом стоимости строительства, иначе в качестве, например, проекта фундамента Вы получите «типовой» фундамент, на котором можно построить десятиэтажный дом.</p>
+                  <p>Архитектурная и конструктивная части проекта должны быть дополнены проектом инженерных систем и, желательно, дизайн-проектом отделки — только в этом случае удастся избежать нестыковок и переделок.</p>
+                </div>
+                <div class="stage-slide">
+                  <div class="img-wrap"><img src="img/stage1.png" alt=""/><span class="count">2</span></div>
+                  <p class="heading">2 этап. Проектирование</p>
+                  <p>Проектирование дома начинается с создания эскизного проекта.</p>
+                  <p>В программе ArchiCad строится 3D-модель будущего дома, которая позволяет еще до начала строительства увидеть на экране монитора, каким будет дом, и даже «походить» по нему. Эскизный проект загородного дома оформляется в виде альбома, который содержит планы, фасады, разрезы дома и его привязку к участку. Такой альбом необходим для получения разрешения на строительство в местной администрации.</p>
+                  <p>Для того, чтобы приступить к строительству дома, эскизного проекта недостаточно, необходимо подробное описание всех деталей с указанием размеров и используемых материалов, а также расчет конструктивных элементов дома. Полная информация, необходимая для строительства, содержится в рабочем проекте дома. Важно, чтобы рабочий проект был сделан индивидуально и с учетом стоимости строительства, иначе в качестве, например, проекта фундамента Вы получите «типовой» фундамент, на котором можно построить десятиэтажный дом.</p>
+                  <p>Архитектурная и конструктивная части проекта должны быть дополнены проектом инженерных систем и, желательно, дизайн-проектом отделки — только в этом случае удастся избежать нестыковок и переделок.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-talking cf">
+          <div class="container">
+            <h2 class="block-title">о нас говорят</h2>
+            <p class="subheading">Проектирование дома начинается с создания эскизного проекта. В программе ArchiCad строится 3D-модель будущего дома, которая позволяет еще до начала строительства увидеть на экране монитора, каким будет дом, и даже «походить» по нему. Эскизный проект загородного дома оформляется в виде альбома, который содержит планы, фасады, разрезы дома и его привязку к участку. Такой альбом необходим для получения разрешения на строительство в местной администрации.</p>
+            <div class="talking-slider-wrapper">
+              <div class="talking-slick-prev talking-arr"></div>
+              <div class="talking-slick-next talking-arr"></div>
+              <div class="talking-slider">
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений1</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”1</p>
+                  </div>
+                </div>
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений2</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”2</p>
+                  </div>
+                </div>
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений3</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”3</p>
+                  </div>
+                </div>
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений4</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”4</p>
+                  </div>
+                </div>
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений5</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”5 ой-сервис”5 ой-сервис”5</p>
+                  </div>
+                </div>
+                <div class="talking-slider-item">
+                  <div class="img-wrap">
+                    <div class="img-inner"><img src="img/talk-img.png" alt=""/></div>
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name">Андросов Евгений6</p>
+                    <p class="job">генеральный директор “ООО Строй-сервис”6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top cf">
+          <div class="logo"><a href="#"><img src="img/logo.png" alt=""/></a>
+            <p class="slogan">Загородное строительство частных домов</p>
+          </div>
+          <div class="footer-nav">
+            <ul class="first">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Наши услуги</a></li>
+              <li><a href="#">Каталог проектов</a></li>
+              <li><a href="#">Портфолио</a></li>
+            </ul>
+            <ul class="second">
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <p class="heading">Мы в сети:</p>
+            <ul>
+              <li class="fb"><a href="#"><span></span></a></li>
+              <li class="vk"><a href="#"><span></span></a></li>
+              <li class="twit"><a href="#"><span></span></a></li>
+              <li class="gplus"><a href="#"><span></span></a></li>
+            </ul>
+            <p class="made-by">Сайт разроботан:<a href="#">Копират студии</a></p>
+          </div>
+        </div>
+        <div class="copyright cf">
+          <p class="copyright__txt">Copyright 2016, Tililitalo</p>
+          <div class="footer-share">
+            <p>Рассказать друзьям:</p>
+            <ul class="share-list">
+              <li class="fb"><a href="#" class="icon"></a><span class="number">13</span></li>
+              <li class="twit"><a href="#" class="icon"></a><span class="number">36</span></li>
+              <li class="gplus"><a href="#" class="icon"></a><span class="number">25</span></li>
+              <li class="pint"><a href="#" class="icon"></a><span class="number">7</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      $(".intro").vegas({
+      	animation: 'random',
+      	transitionDuration: 3000,
+      	delay: 10000,
+          slides: [
+              { src: "/img/top.jpg" },
+              { src: "/img/top2.jpg" },
+          ],
+      });
+    </script>
+  </body>
+</html>

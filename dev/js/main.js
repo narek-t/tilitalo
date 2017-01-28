@@ -119,6 +119,40 @@ $(document).ready(function() {
 	 //  ]
 	});
 
+	$('.stage-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		dots: true,
+		nextArrow: $('.slick-next'),
+  		prevArrow: $('.slick-prev'),
+	});
+
+	$('.talking-slider').slick({
+		focusOnSelect: true,
+		centerMode: true,
+		centerPadding: '0px',
+		// variableWidth: true,
+		slidesToShow: 5,
+		nextArrow: $('.talking-slick-next'),
+  		prevArrow: $('.talking-slick-prev'),
+  		responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 540,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    },
+	  ]
+	});
+
+	
+
 	var rangeSlider = document.getElementById('range-slider');
 	if(rangeSlider) {
 		noUiSlider.create(rangeSlider, {
@@ -173,6 +207,34 @@ $(document).ready(function() {
 	    });
 	    $('.chronology-bottom .swiper-slide:first-child').addClass('is-selected');
 	}
+
+	$('a[href*=#order]').on('click', function(event) {
+    	event.preventDefault();
+    	$('html,body').animate({scrollTop: $(this.hash).offset().top - 74}, 600);
+	});
+
+
+function makeFileList() {
+	var input = document.getElementById("filesToUpload");
+	var ul = document.getElementById("fileList");
+	while (ul.hasChildNodes()) {
+		ul.removeChild(ul.firstChild);
+	}
+	for (var i = 0; i < input.files.length; i++) {
+		var li = document.createElement("li");
+		li.innerHTML = input.files[i].name + ', ';
+		ul.appendChild(li);
+	}
+	if(!ul.hasChildNodes()) {
+		var li = document.createElement("li");
+		li.innerHTML = 'Не выбрано ничего';
+		ul.appendChild(li);
+	}
+}
+
+$('#filesToUpload').on('change', function(event) {
+	makeFileList();
+});
 
      
 
