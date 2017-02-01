@@ -97,6 +97,9 @@ $(document).ready(function() {
 	});
 
 
+
+
+
 	$('.fancybox').fancybox({
 		helpers: {
 			overlay: {
@@ -132,6 +135,7 @@ $(document).ready(function() {
 		centerMode: true,
 		centerPadding: '0px',
 		// variableWidth: true,
+		asNavFor: '.talking-text__slider',
 		slidesToShow: 5,
 		nextArrow: $('.talking-slick-next'),
   		prevArrow: $('.talking-slick-prev'),
@@ -149,6 +153,11 @@ $(document).ready(function() {
 	      }
 	    },
 	  ]
+	});
+	$('.talking-text__slider').slick({
+		prevArrow: false,
+		nextArrow: false,
+		asNavFor: '.talking-slider'
 	});
 
 	
